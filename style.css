@@ -1,0 +1,35 @@
+.line {
+    display: flex;
+    flex-direction: row;
+}
+.line:before, .line:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid lightgrey;
+    margin: auto;
+}
+.line:before {
+    margin-right: 10px
+}
+.line:after {
+    margin-left: 10px
+}
+span{
+    color: grey;
+}
+@media (max-width: 768px) {
+    .font-size-1{
+        font-size: 2.5rem;
+    }
+    .font-size-2{
+        font-size: 1rem;
+    }
+    .font-size-3{
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 768px) {
+    .border-custom {
+        border-right:1px solid grey;
+    }
+}
